@@ -8,8 +8,6 @@ var form = document.querySelector('#feedback_form'),
         ajax.open('POST', '/server_action.php', true);
         ajax.send(send_data);
         ajax.onload = function(){
-            console.log(ajax.responseText);
-            alert("Данные загружены");
             form.reset();
             alert(ajax.responseText);
         }
