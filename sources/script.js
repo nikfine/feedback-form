@@ -11,6 +11,7 @@ var form = document.querySelector('#feedback_form'),
             console.log(ajax.responseText);
             alert("Данные загружены");
             form.reset();
+            alert(ajax.responseText);
         }
     
         e.preventDefault();
