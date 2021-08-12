@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Обратная связь</title>
+    <link rel="stylesheet" href="/sources/style.css">
+    <script src="/sources/script.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <h1>Обратная связь</h1>
+        <form id="feedback_form">
+            <label for="name">Имя</label>
+            <input type="text" id="name" name="name" placeholder="Имя" required /><br />
+            <label for="email">Электронная почта</label>
+            <input type="email" id="email" name="email" placeholder="Электронная почта" required /><br />
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" placeholder="Телефон" required /><br />
+            <!-- Добавление нескольких файлов можно организовать по разному, но для примера я выбрал этот вариант -->
+            <label for="file">Файлы</label>
+            <input type="file" id="file" name="file" multiple /><br />
+            <input type="submit" value="Отправить" />
+        </form>
+    </div>
+</body>
+</html>
