@@ -10,6 +10,7 @@ var form = document.querySelector('#feedback_form'),
         ajax.onload = function(){
             console.log(ajax.responseText);
             alert("Данные загружены");
+            form.reset();
         }
     
         e.preventDefault();
